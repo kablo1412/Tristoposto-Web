@@ -1,0 +1,272 @@
+.cjenik_wrapper {
+  height: auto;
+  background-color: var(--tamna);
+  padding: 4vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vw;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.cjenik_wrapper > * {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 1s forwards;
+}
+.naslovi {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.naslovi h1 {
+  color: var(--svijetla);
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 4.5vw;
+  letter-spacing: -2px;
+}
+.naslovi h2 {
+  font-size: 2vw;
+  color: var(--tekst);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.naslovi span {
+  color: var(--svijetla);
+}
+.naslovi h2 span:nth-child(1) {
+  font-size: 2vw;
+}
+.naslovi h2 span:nth-child(2) {
+  padding-right: 0.5vw;
+  font-size: 1.3vw;
+}
+.paketi {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3vw;
+}
+.obicni,
+.plus {
+  height: auto;
+  width: auto;
+  gap: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+.paket {
+  background-color: var(--tamna);
+  border-left: 1px solid var(--svijetla);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.paket > * {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.naslov_paketa {
+  background-color: var(--svijetla);
+  width: 18vw;
+  padding: 0.2vw 1vw;
+}
+.naslov_paketa h4 {
+  color: var(--tekst);
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+}
+.opis_paketa {
+  gap: 0.5vw;
+  padding: 1vw;
+  height: 6.5vw;
+}
+.opis_paketa p {
+  color: var(--tekst);
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+.cijena_paketa {
+  padding: 1vw;
+  padding-bottom: 0vw;
+}
+.cijena_paketa p {
+  color: var(--tekst);
+  font-weight: 600;
+  font-size: 1.2vw;
+}
+.plus .naslov_paketa h4 span {
+  color: var(--sporedna);
+  font-family: "Bebas Neue";
+}
+.cijena {
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+.obicni .cijena {
+  color: var(--svijetla);
+}
+.plus .cijena {
+  color: var(--sporedna);
+}
+.artikli {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  gap: 2vw;
+}
+.prviArtikl,
+.drugiArtikl {
+  height: auto;
+  width: 100%;
+  color: var(--tekst);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+.prviArtikl p,
+.drugiArtikl p,
+.opis_stavke p {
+  font-weight: 300;
+}
+h5 {
+  text-transform: uppercase;
+  color: var(--svijetla);
+  font-size: 1.1vw;
+}
+.druge_cijene {
+  color: var(--tekst);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+}
+.stavka {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+.cijena_stavke .cijena {
+  color: var(--svijetla);
+  font-size: 1.2vw;
+}
+.cijena_stavke p {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .cjenik_wrapper {
+    padding: 4vw 0;
+    padding-top: 60px;
+    gap: 15vw;
+  }
+  .cjenik_wrapper > * {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .paketi {
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 6vw;
+  }
+  .obicni,
+  .plus {
+    gap: 6vw;
+    flex-direction: column;
+  }
+  .naslov_paketa {
+    width: 100%;
+    padding: 1vw;
+  }
+  .naslov_paketa h4 {
+    font-size: 7vw;
+  }
+  .naslovi h1 {
+    font-size: 10vw;
+  }
+  .naslovi h2 {
+    font-size: 5vw;
+  }
+  .naslovi h2 span:nth-child(1) {
+    font-size: 5vw;
+  }
+  .naslovi h2 span:nth-child(2) {
+    font-size: 3.3vw;
+  }
+  h5 {
+    font-size: 4vw;
+  }
+  .opis_paketa {
+    gap: 2vw;
+    padding: 2vw;
+    height: auto;
+  }
+  .opis_paketa p {
+    font-size: 3.5vw;
+  }
+  .cijena_paketa p {
+    font-size: 4vw;
+  }
+  .cijena {
+    font-size: 5vw;
+  }
+  .cijena_stavke .cijena {
+    font-size: 5vw;
+  }
+  .cijena_stavke p {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .artikli {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    gap: 5vw;
+  }
+  .prviArtikl,
+  .drugiArtikl {
+    height: auto;
+    width: 100%;
+    color: var(--tekst);
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .prviArtikl p,
+  .drugiArtikl p,
+  .opis_stavke p {
+    font-weight: 400;
+    font-size: 3.5rem;
+  }
+  .druge_cijene {
+    gap: 6vw;
+  }
+  .stavka {
+    gap: 1.5vw;
+  }
+  .stavka .opis_stavke p {
+    font-size: 4rem;
+    text-align: justify;
+  }
+}

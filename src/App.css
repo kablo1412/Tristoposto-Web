@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  cursor: default;
+  font-size: 1vw;
+}
+
+:root {
+  --tamna: #0e0e1e;
+  --svijetla: #5b7ce7;
+  --tekst: #dfe9ff;
+  --sporedna: #f3d55a;
+}
+
+a {
+  text-decoration: none;
+  color: var(--tekst);
+  cursor: pointer;
+}
+i,
+input,
+textarea {
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+span {
+  font-size: inherit;
+}

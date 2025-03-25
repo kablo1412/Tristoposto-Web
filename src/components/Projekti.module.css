@@ -1,0 +1,125 @@
+.projekti_wrapper {
+  height: auto;
+  background-color: var(--tamna);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 0;
+  gap: 5vw;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.projekti_wrapper > * {
+  width: 60vw;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: slideIn 1s forwards;
+}
+.projekti_wrapper .naslov h1 {
+  color: var(--svijetla);
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 4.5vw;
+  letter-spacing: -2px;
+}
+.projekti {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+}
+.projekt {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  position: relative;
+  height: auto;
+  width: fit-content;
+}
+.slika {
+  display: inline-block;
+  position: relative;
+}
+.slika img {
+  height: 15vw;
+  width: 25vw;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+.projekt:hover .naziv_projekta h5 {
+  letter-spacing: 0.1vw;
+  word-spacing: 0.35vw;
+  font-weight: 400;
+}
+.projekt:hover .slika img {
+  opacity: 0.15;
+}
+.projekt:hover .slika .link i {
+  opacity: 1;
+}
+.link i {
+  color: var(--tekst);
+  font-size: 2vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.naziv_projekta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.naziv_projekta h5 {
+  transition: word-spacing 0.5s ease, letter-spacing 0.5s ease,
+    font-weight 0.5s ease;
+}
+@media only screen and (max-width: 600px) {
+  .projekti_wrapper {
+    padding-top: 60px;
+    gap: 15vw;
+  }
+  .projekti_wrapper > * {
+    width: 80vw;
+    animation: slideIn 1s forwards;
+  }
+  .projekti_wrapper .naslov h1 {
+    font-size: 10vw;
+  }
+  .projekti {
+    gap: 10vw;
+  }
+  .projekt {
+    gap: 2vw;
+  }
+  .slika img {
+    height: 35vw;
+    width: 70vw;
+    transition: none;
+    position: relative;
+  }
+  .naziv_projekta {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .naziv_projekta h5 {
+    transition: none;
+    font-weight: 400;
+  }
+}

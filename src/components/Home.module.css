@@ -1,0 +1,240 @@
+.usluge {
+  height: auto;
+  background-color: var(--tamna);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.usluge .naslovna {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  animation: slideIn 1s forwards;
+}
+.usluge .naslovna .naslovni_tekst {
+  width: 20vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.usluge .naslovna .naslovni_tekst > * {
+  text-align: center;
+  padding: 0.5vw 0;
+}
+.usluge .naslovna .naslovni_tekst h1 {
+  color: var(--svijetla);
+  text-transform: uppercase;
+  font-size: 1.8vw;
+}
+.usluge .naslovna .naslovni_tekst p {
+  color: var(--tekst);
+  font-size: 1vw;
+  font-weight: 300;
+}
+.usluge .naslovna .naslovni_tekst p span {
+  color: var(--svijetla);
+  font-weight: 600;
+}
+.usluge .naslovna .naslovni_tekst a {
+  color: var(--tamna);
+  background-color: var(--svijetla);
+  width: auto;
+  padding: 15px;
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  word-spacing: 0.35vw;
+  text-transform: uppercase;
+  height: 45px;
+  width: 13vw;
+  border-radius: 4px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease, letter-spacing 0.4s ease,
+    word-spacing 0.4s ease;
+}
+.usluge .naslovna .naslovni_tekst a:hover {
+  background-color: var(--tekst);
+  letter-spacing: 0vw;
+  word-spacing: 0vw;
+}
+.slika_razmak {
+  padding: 5vw;
+}
+.slika_razmak:nth-of-type(2) {
+  padding: 0;
+}
+.zasloni {
+  width: 50vw;
+}
+.gbp_slika {
+  height: 25vw;
+  width: auto;
+}
+.web_stranice,
+.gbp,
+.slika_razmak,
+.domene {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 2vw;
+}
+.domene {
+  padding: 5vw 0;
+}
+.naslov_usluge h3 {
+  color: var(--tekst);
+  text-transform: uppercase;
+  font-size: 1.3vw;
+}
+.naslov_usluge h3 span {
+  color: var(--svijetla);
+}
+.naslov_usluge h3 span:nth-child(1) {
+  font-size: 2vw;
+}
+.naslov_usluge h3 span:nth-child(2) {
+  padding-right: 0.5vw;
+}
+.tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.postupak_usluge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+.tekst p {
+  color: var(--tekst);
+  width: 60%;
+  font-size: 1vw;
+  font-weight: 300;
+  text-align: justify;
+}
+.tekst p span {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--svijetla);
+}
+.podnaslov h4 {
+  color: var(--svijetla);
+  text-transform: uppercase;
+  font-size: 1.1vw;
+}
+.gbp .postupak_usluge .tekst p {
+  width: 87%;
+}
+.registracija_domene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 70vw;
+  }
+  .usluge .naslovna .naslovni_tekst {
+    width: 70vw;
+  }
+  .usluge .naslovna .naslovni_tekst > * {
+    text-align: center;
+    padding: 0.5vw 0;
+  }
+  .usluge .naslovna .naslovni_tekst h1 {
+    color: var(--svijetla);
+    text-transform: uppercase;
+    font-size: 5vw;
+  }
+  .usluge .naslovna .naslovni_tekst p {
+    color: var(--tekst);
+    font-size: 4vw;
+  }
+  .usluge .naslovna .naslovni_tekst p span {
+    color: var(--svijetla);
+    font-weight: 600;
+  }
+  .usluge .naslovna .naslovni_tekst a {
+    color: var(--tamna);
+    background-color: var(--svijetla);
+    width: auto;
+    font-size: 4vw;
+    letter-spacing: 0vw;
+    word-spacing: 0.35vw;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  .zasloni {
+    width: 80vw;
+  }
+  .gbp_slika {
+    height: 75vw;
+  }
+  .web_stranice,
+  .gbp,
+  .domene {
+    width: 80%;
+    padding: 10vw 0;
+  }
+  .naslov_usluge h3 {
+    font-size: 4vw;
+  }
+  .naslov_usluge h3 span:nth-child(1) {
+    font-size: 6vw;
+  }
+  .naslov_usluge h3 span:nth-child(2) {
+    padding-right: 1.5vw;
+  }
+  .tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+  }
+  .tekst p {
+    width: 95%;
+    font-size: 3.6vw;
+  }
+  .podnaslov h4 {
+    font-size: 3.6vw;
+    padding-top: 4vw;
+  }
+  .gbp .postupak_usluge .tekst p {
+    width: 95%;
+  }
+  .postupak_usluge {
+    gap: 5vw;
+  }
+  .registracija_domene {
+    gap: 5vw;
+  }
+}
