@@ -109,7 +109,6 @@ textarea::placeholder {
   color: var(--tamna);
   background-color: var(--sporedna);
 }
-
 .left .poruka_poslana {
   position: absolute;
   bottom: 22%;
@@ -142,7 +141,7 @@ li a i {
   padding-top: 0.5vw;
 }
 li a i:hover {
-  color: var(--svijetla);
+  color: var(--sporedna);
 }
 li p {
   text-transform: uppercase;
@@ -218,6 +217,7 @@ ul li h2 {
     gap: 4.5vw;
     padding-top: 0.5vw;
   }
+
   li p {
     font-size: 3.5vw;
   }

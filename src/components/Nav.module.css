@@ -34,10 +34,10 @@
   font-size: 0.7vw;
 }
 .nav_links a:hover {
-  color: var(--svijetla);
+  color: var(--sporedna);
 }
 .nav_links li a.active {
-  color: var(--svijetla);
+  color: var(--sporedna);
 }
 .ham_menu {
   display: none;

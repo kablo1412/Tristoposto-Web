@@ -62,7 +62,7 @@
 .projekt:hover .naziv_projekta h5 {
   letter-spacing: 0.1vw;
   word-spacing: 0.35vw;
-  font-weight: 400;
+  font-weight: 700;
 }
 .projekt:hover .slika img {
   opacity: 0.15;
@@ -80,7 +80,6 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 .naziv_projekta {
   display: flex;
   justify-content: center;
@@ -89,6 +88,7 @@
 .naziv_projekta h5 {
   transition: word-spacing 0.5s ease, letter-spacing 0.5s ease,
     font-weight 0.5s ease;
+  font-weight: 400;
 }
 @media only screen and (max-width: 600px) {
   .projekti_wrapper {

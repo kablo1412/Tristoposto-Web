@@ -187,15 +187,19 @@ function Home() {
               </p>
             </div>
             <div className={styles.podnaslov}>
-              <h4>REGISTRACIJA OSTALIH NAPLATNIH DOMENA</h4>
+              <h4>REGISTRACIJA NAPLATNIH DOMENA</h4>
             </div>
             <div className={styles.tekst}>
               <p>
                 Na tržištu su dostupne razne domene, pa tako i plaćene .hr
                 domene ukoliko se rubrika “besplatne domene” iznad, ne odnosi na
-                vaš slučaj. Na ovome linku možete provjeriti dostupnost i cijene
-                raznih završnih domena. Domena koju ovdje spominjemo, .hr iznosi
-                otprilike 70€ godišnje registracije.
+                vaš slučaj. Na
+                <a href="https://www.regica.net/" target="_blank">
+                  ovome linku
+                </a>
+                možete provjeriti dostupnost i cijene raznih završnih domena.
+                Domena koju ovdje spominjemo, .hr iznosi otprilike 70€ godišnje
+                registracije.
               </p>
               <p>
                 Postoji puno različitih vrsta domena, a njihove cijene značajno

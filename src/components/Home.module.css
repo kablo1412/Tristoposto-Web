@@ -51,7 +51,7 @@
 }
 .usluge .naslovna .naslovni_tekst a {
   color: var(--tamna);
-  background-color: var(--svijetla);
+  background-color: var(--sporedna);
   width: auto;
   padding: 15px;
   font-size: 1vw;
@@ -70,7 +70,7 @@
     word-spacing 0.4s ease;
 }
 .usluge .naslovna .naslovni_tekst a:hover {
-  background-color: var(--tekst);
+  background-color: var(--svijetla);
   letter-spacing: 0vw;
   word-spacing: 0vw;
 }
@@ -95,9 +95,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 70%;
+  align-items: flex-start;
+  width: 60vw;
   gap: 2vw;
+}
+.gbp_slika,
+.slika_razmak {
+  align-items: center;
 }
 .domene {
   padding: 5vw 0;
@@ -126,13 +130,13 @@
 .postupak_usluge {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 0.5vw;
 }
 .tekst p {
   color: var(--tekst);
-  width: 60%;
+  width: 100%;
   font-size: 1vw;
   font-weight: 300;
   text-align: justify;
@@ -148,14 +152,19 @@
   font-size: 1.1vw;
 }
 .gbp .postupak_usluge .tekst p {
-  width: 87%;
+  width: 100%;
 }
 .registracija_domene {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 1vw;
+}
+.tekst p a {
+  color: var(--sporedna);
+  margin: 0 0.3vw;
+  font-size: inherit;
 }
 @media only screen and (max-width: 600px) {
   .logo {
@@ -183,7 +192,6 @@
   }
   .usluge .naslovna .naslovni_tekst a {
     color: var(--tamna);
-    background-color: var(--svijetla);
     width: auto;
     font-size: 4vw;
     letter-spacing: 0vw;
@@ -203,6 +211,12 @@
   .domene {
     width: 80%;
     padding: 10vw 0;
+  }
+  .web_stranice,
+  .gbp,
+  .slika_razmak,
+  .domene {
+    align-items: center;
   }
   .naslov_usluge h3 {
     font-size: 4vw;
@@ -231,10 +245,15 @@
   .gbp .postupak_usluge .tekst p {
     width: 95%;
   }
+
   .postupak_usluge {
     gap: 5vw;
   }
+  .postupak_usluge {
+    align-items: center;
+  }
   .registracija_domene {
-    gap: 5vw;
+    gap: 3vw;
+    align-items: center;
   }
 }
