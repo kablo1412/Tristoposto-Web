@@ -23,7 +23,7 @@
 .contact_wrapper .up {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: row;
   flex: 2;
   flex-wrap: wrap;
@@ -56,7 +56,6 @@
 }
 .right form input {
   width: 100%;
-  background-color: blue;
   height: auto;
   color: var(--tekst);
 }
@@ -81,7 +80,7 @@ textarea::placeholder {
 }
 .right form label textarea {
   width: 100%;
-  height: 8vw;
+  height: 5vw;
   resize: none;
   color: var(--tekst);
 }

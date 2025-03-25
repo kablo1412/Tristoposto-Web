@@ -1,18 +1,19 @@
 .nav_wrapper {
   height: auto;
   background-color: var(--tamna);
-  padding: 0.7rem;
+  padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   position: fixed;
   gap: 5vw;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
   z-index: 10;
   user-select: none;
+  width: 60vw;
 }
 .nav_wrapper .logo a img {
   cursor: pointer;
@@ -80,6 +81,11 @@
 @media only screen and (max-width: 600px) {
   .nav_wrapper {
     background-color: transparent;
+    top: 0;
+    left: 0;
+    transform: unset;
+    width: 100%;
+    padding: 1.7vw;
   }
   .logo {
     display: none;
